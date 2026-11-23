@@ -6,7 +6,7 @@ permissions:
   contents: write
 jobs:
   flatten:
-    if: "!contains(github.event.head_commit.message, 'Flatten repo root contents')"
+    if: "!contains(github.event.head_commit.message, 'root-flatten-marker')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,5 +22,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Flatten repo root contents" || echo "nothing to commit"
+          git commit -m "root-flatten-marker" || echo "nothing to commit"
           git push
