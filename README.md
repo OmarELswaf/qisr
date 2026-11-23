@@ -2,9 +2,11 @@
 
 A full-stack URL shortener with click analytics: an Express REST API with validation, rate limiting and QR code generation, plus a React dashboard to create links, copy them, view QR codes and inspect click statistics.
 
-> **Live demo:** https://qisr-url.vercel.app (link updated after deployment)
+> **Live demo:** https://qisr-iota.vercel.app
 >
 > **Demo data:** the live demo runs in in-memory mode with three seeded demo links (`github`, `portfolio`, `nexus-demo`). Data resets on redeploy/restart. All sample links and click counts shown there are demo data.
+
+![Qisr dashboard with click analytics](screenshots/dashboard.png)
 
 ## Features
 
